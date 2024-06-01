@@ -16,3 +16,11 @@ declare module 'react' {
     css?: CSSInterpolation
   }
 }
+
+declare global {
+  namespace JSX {
+    interface IntrinsicAttributes {
+      css?: CSSInterpolation;
+    }
+  }
+}
